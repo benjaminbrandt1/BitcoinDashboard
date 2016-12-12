@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="edu.temple.bitcoindashboard.InfoFragments.PriceTrackerFragment"
+    android:weightSum="1">
+
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/price_tracker_progress"
+        android:layout_below="@+id/chart_choices"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/chart_choices"
+        android:layout_below="@+id/price_chart"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_height="200dp"
+        android:id="@+id/price_chart"
+        android:scaleType="fitXY"
+        android:layout_width="400dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"></ImageView>
+
+</RelativeLayout>

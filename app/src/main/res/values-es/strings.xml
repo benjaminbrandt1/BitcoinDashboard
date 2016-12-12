@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Bitcoin Rastreador</string>
+
+    <string name="five_day">Cinco Días</string>
+    <string name="one_day">Un Día</string>
+    <string name="fiffteen_day">Quince Días</string>
+    <string name="current_price">El Precio Actual</string>
+    <string name="price_tracker">Los Gráficos</string>
+    <string name="price_api">http://btc.blockr.io/api/v1/coin/info</string>
+    <string name="wallet_info">Información de Las Carteras</string>
+    <string name="block_info">Información de Los Bloques</string>
+    <string name="price_information">Información del Precio</string>
+    <string name="drawer_open">Abra cajón de navegación</string>
+    <string name="drawer_close">Cierre cajón de navegación</string>
+    <string name="fee">La Cuota: </string>
+    <string name="size">El Tamaño: </string>
+    <string name="difficulty">La Dificultad: </string>
+
+    <string-array name="chart_timespans">
+        <item>@string/one_day</item>
+        <item>@string/five_day</item>
+        <item>@string/fiffteen_day</item>
+    </string-array>
+
+    <string-array name="app_functions">
+        <item>@string/price_information</item>
+        <item>@string/wallet_info</item>
+        <item>@string/block_info</item>
+    </string-array>
+
+    <string name="block_not_found">No Se Encuentra El Bloque</string>
+    <string name="block_info_hint">Escriba el Número de Bloque</string>
+    <string name="next_block_text">Siguiente</string>
+    <string name="previous_block_text">Anterior</string>
+    <string name="wallet_hint">Escriba la Dirección de la Cartera</string>
+    <string name="balance">El Saldo:</string>
+    <string name="total_received">El Total Recibido:</string>
+    <string name="last_transaction">La Última Transacción</string>
+    <string name="date">La Fecha:</string>
+    <string name="block">El Bloque:</string>
+    <string name="last_tx_text">El Valor:</string>
+    <string name="stored_wallets">Las Carteras Almanecadas</string>
+    <string name="wallet_info_text">Información de Las Carteras</string>
+    <string name="add_wallet">Añadir La Cartera</string>
+    <string name="save">Guardar</string>
+    <string name="wallet_not_found">No Se Encuentra La Cartera</string>
+</resources>

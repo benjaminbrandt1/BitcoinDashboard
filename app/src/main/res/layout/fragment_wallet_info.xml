@@ -1,0 +1,156 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.temple.bitcoindashboard.InfoFragments.WalletInfoFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/wallet_address_entry"
+        android:hint="@string/wallet_hint"
+        android:layout_alignBaseline="@+id/wallet_search_button"
+        android:layout_alignBottom="@+id/wallet_search_button"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="36dp" />
+
+    <Button
+        android:text="@android:string/search_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wallet_search_button"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/wallet_address_entry" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wallet_progress_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/block"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/block_text"
+        android:textSize="20sp"
+        android:layout_below="@+id/date_amount"
+        android:layout_alignStart="@+id/date_text"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:text="@string/last_tx_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/last_tx_value_text"
+        android:textSize="20sp"
+        android:layout_below="@+id/block_text"
+        android:layout_alignStart="@+id/block_text"
+        android:layout_marginTop="13dp" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:id="@+id/wallet_address"
+        android:textSize="22sp"
+        android:layout_below="@+id/wallet_search_button"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/total_received"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/total_received_text"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/balance_text"
+        android:layout_alignStart="@+id/balance_text" />
+
+    <TextView
+        android:text="@string/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_text"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/date_amount"
+        android:layout_alignBottom="@+id/date_amount"
+        android:layout_alignStart="@+id/total_received_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/balance_amount"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/balance_text"
+        android:layout_alignBottom="@+id/balance_text"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/total_received_amount"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/total_received_text"
+        android:layout_alignBottom="@+id/total_received_text"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_amount"
+        android:textSize="20sp"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/last_transaction_text"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="@string/last_transaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/last_transaction_text"
+        android:textSize="25sp"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/total_received_text"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/block_value"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/block_text"
+        android:layout_alignBottom="@+id/block_text"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/last_tx_value"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/last_tx_value_text"
+        android:layout_alignBottom="@+id/last_tx_value_text"
+        android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="@string/balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/balance_text"
+            android:textSize="20sp"
+            android:layout_alignBottom="@+id/wallet_address"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+
+</ScrollView>

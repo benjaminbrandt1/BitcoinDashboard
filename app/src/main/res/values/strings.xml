@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Bitcoin Dashboard</string>
+
+    <string name="five_day">Five Days</string>
+    <string name="one_day">One Day</string>
+    <string name="fiffteen_day">Fifteen Days</string>
+    <string name="current_price">Current Price</string>
+    <string name="price_tracker">Price Charts</string>
+    <string name="price_api">http://btc.blockr.io/api/v1/coin/info</string>
+    <string name="wallet_info">Wallet Information</string>
+    <string name="block_info">Block Information</string>
+    <string name="price_information">Price Information</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="fee">Fee: </string>
+    <string name="size">Size: </string>
+    <string name="difficulty">Difficulty: </string>
+
+    <string-array name="chart_timespans">
+        <item>@string/one_day</item>
+        <item>@string/five_day</item>
+        <item>@string/fiffteen_day</item>
+    </string-array>
+
+    <string-array name="app_functions">
+        <item>@string/price_information</item>
+        <item>@string/wallet_info</item>
+        <item>@string/block_info</item>
+    </string-array>
+
+    <string name="block_not_found">Block Not Found</string>
+    <string name="block_info_hint">Enter block number</string>
+    <string name="next_block_text">Next</string>
+    <string name="previous_block_text">Previous</string>
+    <string name="wallet_hint">Enter wallet address</string>
+    <string name="balance">Balance:</string>
+    <string name="total_received">Total Received:</string>
+    <string name="last_transaction">Last Transaction</string>
+    <string name="date">Date:</string>
+    <string name="block">Block:</string>
+    <string name="last_tx_text">Value:</string>
+    <string name="stored_wallets">Stored Wallets</string>
+    <string name="wallet_info_text">Wallet Information</string>
+    <string name="add_wallet">Add Wallet</string>
+    <string name="save">Save</string>
+    <string name="wallet_not_found">Wallet Not Found</string>
+</resources>

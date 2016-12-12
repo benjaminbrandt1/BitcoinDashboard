@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.temple.bitcoindashboard.InfoFragments.StoredWalletsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:text="@string/stored_wallets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stored_wallets_text"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:id="@+id/address_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/stored_wallets_text"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@mipmap/ic_add"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/stored_wallets_text"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="29dp"
+        android:id="@+id/floatingActionButtonWallets"
+        app:backgroundTint="@android:color/holo_orange_dark" />
+</RelativeLayout>
